@@ -1,0 +1,87 @@
+/** @format */
+
+.hero-container {
+  /*to make the image responsive and full page */
+  /* height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+  background: url('./waffles.jpg');
+  background-size: cover;
+  height: 135vh;
+  /* width: 100%; */
+  /* position: fixed; */
+  /* top: 0px;
+  left: 0px; */
+  /* background-size: cover; */
+  /* height: 100%; */
+  /* width: 100%; */
+  /* position: fixed; */
+  /* top: 0px; */
+ 
+}
+/* .text-container {
+  max-width: 960px;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+} */
+.text-container h1 {
+  font-family: "Roboto", sans-serif;
+  color: #eddbcb;
+  font-size: 156px;
+  text-shadow: 10px 10px 4px rgba(7, 7, 7, 7);
+  margin: 0;
+  text-transform: uppercase;
+  opacity: 0;
+  animation: fadeUp .7s forwards;
+  
+
+  /* position: absolute; */
+  /* transform: translateX(-50%) translateY(-50%); */
+
+  /* margin: -25px 0 0 -25px; */
+}
+
+main {
+  color: white;
+}
+
+.text-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #242c2c;
+  text-align: center;
+}
+/* h1 {
+  text-transform: uppercase;
+  margin: 0;
+  font-size: 5rem;
+  white-space: nowrap;
+} */
+p {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+@keyframes fadeUp {
+  0%{
+    transform: translateY(4rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0rem);
+  }
+}
